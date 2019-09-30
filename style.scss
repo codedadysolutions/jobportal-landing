@@ -260,5 +260,48 @@ body{
      }
     
     }
+    .mainmenu{
+        display:flex;
+        position: absolute;
+        top:25%;
+        left:40%;
+        background-color:white;
+        color:#FFC506;
+        clip-path: polygon(0 100%, 100% 100%, 100% 9%, 62% 9%, 51% 0, 39% 10%, 0 10%);
+        transform:translate(-50%);
+        border-radius:5px;
+        font-family: 'Montserrat', sans-serif;
+        animation-name: menuanimation;
+        animation-duration:1s;
+        animation-timing-function: ease-out;
+   
+        ul{
+        padding-top:10px;
+        padding:10px;
+        list-style-type: none;
+        li{
+            padding:5px;
+            a{
+                text-decoration: none;
+                
+            }
+    }
+}
 
-     
+@keyframes menuanimation{
+    0%{
+        opacity:0;
+        transform:translate(-70%);
+        }
+        // 50%{
+        //  transform: translate(-60%);
+        // }
+        100%{
+        opacity:1;
+        transform:translate(-50%);
+        }
+ }
+}
+    .nonemenu{
+        display:none;
+    }

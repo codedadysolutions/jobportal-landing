@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jobportal</title>
+<script>
+    function menuonclick(){
+        
+        if (document.getElementById('mynav').getAttribute('class') == 'mainmenu'){
+            document.getElementById('mynav').setAttribute('class','nonemenu')
+        }else{
+            document.getElementById('mynav').setAttribute('class','mainmenu')
+        }
+            }
+ </script>
 </head>
 <body>
     <div class="main">
@@ -27,7 +37,7 @@
                             <li> <a href="#"> <strong> Contact </strong> </a>
                             </li>
                         </ul>
-                        <div class="icon">
+                        <div class="icon" onclick="menuonclick()">
                             <img src="assets/menu.png" style="height: 50px;width:50px" />
                         </div>
                          </div>
@@ -58,6 +68,19 @@
                    </div>
                         
                 </div>
+
+        <div class="nonemenu"  id="mynav" >
+                <ul class="nav_link">
+                        <li> <a href="#"> <strong>Home </strong> </a>
+                        </li>
+                        <li> <a href="#"> <strong> Pages </strong> </a>
+                        </li>
+                        <li> <a href="#"> <strong>Freelancers </strong>  </a>
+                        </li>
+                        <li> <a href="#"> <strong> Contact </strong> </a>
+                        </li>
+                    </ul>
+             </div>
         
     </div>  
 </body>
